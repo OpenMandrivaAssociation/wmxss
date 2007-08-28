@@ -52,7 +52,6 @@ EOF
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=WmXss
 Comment=Frontend for xscreensaver in a dock.app
 Exec=%{_bindir}/%{name} -e /usr/lib/xscreensaver/lament
