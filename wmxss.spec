@@ -11,6 +11,7 @@ Requires:	xscreensaver-gl
 BuildRequires:	libx11-devel
 BuildRequires:	libxext-devel
 BuildRequires:	libxpm-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 
 %description
