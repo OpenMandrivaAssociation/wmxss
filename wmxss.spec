@@ -38,16 +38,6 @@ tar xjOf %SOURCE1 %{name}-48x48.png > %buildroot%{_liconsdir}/%{name}.png
 mkdir -p %buildroot%{_bindir}
 install -c -s -m 0755 Src/wmxss %buildroot%{_bindir}
 
-install -m 755 -d %buildroot%{_menudir}
-cat <<EOF > %buildroot%{_menudir}/%{name}
-?package(%{name}):command="%{_bindir}/%{name} -e /usr/lib/xscreensaver/lament" \
-icon="%{name}.png" \
-needs="X11" \
-section="More Applications/Games/Toys" \
-title="WmXss" \
-longtitle="Frontend for xscreensaver in a small icon" \
-xdg="true"
-EOF
 
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
@@ -80,7 +70,6 @@ rm -fr %buildroot
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
-%{_menudir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
 
 
