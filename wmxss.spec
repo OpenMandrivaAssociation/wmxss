@@ -77,3 +77,48 @@ rm -fr %buildroot
 %{_datadir}/applications/mandriva-%{name}.desktop
 
 
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.1-16mdv2010.0
++ Revision: 434956
+- rebuild
+
+* Sun Aug 03 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.1-15mdv2009.0
++ Revision: 262123
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.1-14mdv2009.0
++ Revision: 256339
+- rebuild
+- drop old menu
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tvignaud@mandriva.com> 0.1-12mdv2008.1
++ Revision: 129439
+- kill re-definition of %%buildroot on Pixel's request
+- kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+
+* Tue Feb 06 2007 Gustavo De Nardin <gustavodn@mandriva.com> 0.1-12mdv2007.0
++ Revision: 116930
+- fixed .desktop file Comment
+
+* Tue Jan 30 2007 Gustavo De Nardin <gustavodn@mandriva.com> 0.1-11mdv2007.1
++ Revision: 115274
+- fixed and strip BuildRequires to minimum
+- stop using old X prefix
+- fixed menu entry
+- added XDG menu entry for great compliance
+
+* Wed Apr 27 2005 Lenny Cartier <lenny@mandriva.com> 0.1-10mdk
+- rebuild
+
+* Mon Feb 23 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.1-9mdk
+- rebuild
+
