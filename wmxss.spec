@@ -8,9 +8,9 @@ Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}-icons.tar.bz2
 URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/wmxss-0.1.tar.gz
 Requires:	xscreensaver-gl
-BuildRequires:	libx11-devel
-BuildRequires:	libxext-devel
-BuildRequires:	libxpm-devel
+BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(xext)
+BuildRequires:	pkgconfig(xpm)
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 
