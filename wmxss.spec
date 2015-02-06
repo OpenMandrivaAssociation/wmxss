@@ -1,7 +1,7 @@
 Summary:	Frontend for xscreensaver in a dock.app
 Name:		wmxss
 Version:	0.1
-Release:	17
+Release:	18
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	%{name}-%{version}.tar.bz2
