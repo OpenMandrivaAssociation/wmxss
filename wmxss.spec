@@ -6,7 +6,7 @@ License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}-icons.tar.bz2
-URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/wmxss-0.1.tar.gz
+URL:		https://nis-www.lanl.gov/~mgh/WindowMaker/wmxss-0.1.tar.gz
 Requires:	xscreensaver-gl
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
